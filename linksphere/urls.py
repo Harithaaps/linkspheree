@@ -19,6 +19,12 @@ from social import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("register/",views.SignUpView.as_view(),name="sign_up")
+    path("register/",views.SignUpView.as_view(),name="signup"),
+    path("login",views.SignInView.as_view(),name="signin"),
+    path("index",views.IndexView.as_view(),name="index"),
+    path("logout",views.SignOutView.as_view(),name="signout"),
+    
+
+    
 ]
 
